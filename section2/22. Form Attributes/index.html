@@ -126,10 +126,10 @@
                         amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
                         sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
                     </p>
-                    <form>
+                    <form action="submit.php" method="post">
                         <!-- id is more for styling or linking with js (javascript). -->
-                        First Name: <input type="text" name="first" id="first" /><br />
-                        Email: <input type="email" name="email" /><br />
+                        First Name: <input type="text" name="first" id="first" value="John" disabled /><br />
+                        Email: <input type="email" name="email" required /><br />
                         Default: <input type="number" name="default" /><br />
                         Color: <input type="color" name="color" /><br />
                         Radiobutton 1: <input type="radio" name="r1" />
@@ -143,7 +143,7 @@
                         Date: <input type="date" name="d" /><br />
                         Add link: <input type="url" name="addlink" /><br />
                         <textarea>test test :D</textarea><br />
-                        <input type="submit" value="submit" />
+                        <input type="submit" value="Hit this !!!!" />
                         <!-- 
                         when submitting an empty forum you will get this:
                         http://localhost:xxxxx/section2/20.%20HTML%20forms/index.html?first=&email=&default=&color=%23000000
