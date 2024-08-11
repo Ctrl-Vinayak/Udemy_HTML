@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css" />
+        <!--<style></style>-->
+        <script src="script.js"></script>
+        <!--<script>alert("hi")</script>-->
+    </head>
+    <body>
+        <form action="submit.php" method="get">
+            <!-- id is more for styling or linking with js (javascript). -->
+            First Name: <input type="text" name="first" id="first" value="John" disabled /><br />
+            Email: <input type="email" name="email" required /><br />
+            Default: <input type="number" name="default" /><br />
+            Color: <input type="color" name="color" /><br />
+            Radiobutton 1: <input type="radio" name="r1" /> <input type="radio" name="r1" /><br />
+            Radiobutton 2: <input type="radio" name="r2" />
+            <input type="radio" name="r2" />
+            <input type="radio" name="r2" /><br />
+            Checkbox: <input type="checkbox" name="c" class="checkbox" />
+            <input type="checkbox" name="c" class="checkbox" />
+            <input type="checkbox" name="c" class="checkbox" /><br />
+            Date: <input type="date" name="d" /><br />
+            Add link: <input type="url" name="addlink" /><br />
+            <textarea>test test :D</textarea><br />
+            <input type="submit" value="Hit this !!!!" />
+            <!-- 
+            when submitting an empty forum you will get this:
+            http://localhost:51846/section2/22.%20Form%20Attributes/submit.php?email=test%40gmail.com&default=&color=%23000000&d=&addlink=
+
+            another example but not an empty forum send: 
+            (note: for readability I use enter on the link otherwise you had to scroll horizontally to read the whole link out!)
+            http://localhost:51846/section2/22.%20Form%20Attributes/submit.php?email=r%40gmail.com&default=12345&color=%231be45c&r1=on&
+                    r2=on&c=on&c=on&d=2024-08-15&addlink=https%3A%2F%2Fgoogle.com
+            -->
+        </form>
+
+        <!-- Note if you remove the action attribute of form, then you will send back to this current page. -->
+        <!-- post is for sending sensitive information and get is not. -->
+        
+    </body>
+</html>
