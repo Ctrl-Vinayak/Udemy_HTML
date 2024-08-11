@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            h2 {
+                border: 1px solid red;
+            }
+            #birds {
+                background-color: bisque;
+            }
+            .highlight {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        tr = table row
+        td = table data (cell)
+        th = table head (header cell)
+        -->
+
+        <!--table without style="border-collapse: collapse"-->
+        <table style="width: 100%; border: 10px solid black">
+            <!--<tr style="width: 100%; border: 10px solid black;"> -->
+            <tr>
+                <!-- 
+                Styling on tr does not make sense when we use width: 100%, because
+                - width 100% is the same as the table width, this means:
+                    - that there will be no change in the looks.
+                
+                -->
+                <th style="border: 1px solid black">First Name</th>
+                <th style="border: 1px solid black">Last Name</th>
+                <th style="border: 1px solid black">Phone Number</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>32432-323232</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Jones</td>
+                <td>323-231232</td>
+            </tr>
+        </table>
+        
+        <p>---</p>
+
+        <!--table with style="border-collapse: collapse"-->
+        <table style="width: 100%; border-collapse: collapse">
+            <!--<tr style="width: 100%; border: 10px solid black;"> -->
+            <tr style="border: 1px solid black">
+                <th style="border: 1px solid black">First Name</th>
+                <th style="border: 1px solid black">Last Name</th>
+                <th style="border: 1px solid black">Phone Number</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>32432-323232</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Jones</td>
+                <td>323-231232</td>
+            </tr>
+        </table>
+        
+        <p>---</p>
+        
+        <!--table with border around it with border on the tr tags.-->
+        <table style="width: 100%; border: 1px solid black; border-collapse: collapse">
+            <!--<tr style="width: 100%; border: 10px solid black;"> -->
+            <tr style="border: 1px solid black">
+                <th style="border: 1px solid black">First Name</th>
+                <th style="border: 1px solid black">Last Name</th>
+                <th style="border: 1px solid black">Phone Number</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>32432-323232</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Jones</td>
+                <td>323-231232</td>
+            </tr>
+        </table>
+        
+        <p>---</p>
+
+        <h2>test</h2>
+        <h2 id="birds">Birds</h2>
+        <img src="https://loremflickr.com/320/240/dog" alt="not birds but dogs!" />
+        <p class="highlight">
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+            feugiat a, tellus.
+        </p>
+        <p>
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+            feugiat a, tellus.
+        </p>
+        <h2 class="highlight" id="peacock">Peacock</h2>
+        <img src="https://loremfliasdfasdfasdfckr.com/320/240/animals" alt="peacock" />
+        <p>
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+            feugiat a, tellus.
+        </p>
+        <p>
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+            feugiat a, tellus.
+        </p>
+        <p>
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+            ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+            feugiat a, tellus.
+        </p>
+    </body>
+</html>
